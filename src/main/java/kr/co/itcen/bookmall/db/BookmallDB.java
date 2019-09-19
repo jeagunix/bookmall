@@ -14,7 +14,7 @@ public class BookmallDB {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 
-			String url = "jdbc:mariadb://localhost:3306/bookmall?characterEncoding=utf8";
+			String url = "jdbc:mariadb://192.168.1.43:3306/bookmall?characterEncoding=utf8";
 			connection = DriverManager.getConnection(url, "bookmall", "bookmall");
 
 		} catch (ClassNotFoundException e) {
